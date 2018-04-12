@@ -34,6 +34,7 @@ public class productController {
      */
     @RequestMapping("/index")
     public ModelAndView index(ModelAndView modelAndView ,Integer pageNo){
+        System.out.println("我是李文思汗");
         Pager pager = new Pager();
         pager.setTotalCount(productService.getCount());
         if (pageNo==null){
